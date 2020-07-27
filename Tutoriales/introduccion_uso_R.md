@@ -7,7 +7,8 @@ Se puede trabajar con R intalándolo localmente o utilizando servicios por inter
 1. [Instalar R en un computador](instalar_R_en_computador.md)
 2. [Usar un servicio de R en la nube](usar_R_en_nube.md)
 
-![Layout](../IMG/IMG_Rstudio_Layout.png)
+## Layout de RStudio/RStudio-Cloud
+![Layout](../IMG/IMG_R_Layout.png)
 
 ## A. Funcionalidades básicas de RStudio/RStudio-Cloud
 Algunas de las **funcionalidades básicas** de RStudio son:
