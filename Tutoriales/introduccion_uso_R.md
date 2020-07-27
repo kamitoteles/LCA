@@ -58,7 +58,7 @@ lista_detodito <- list(234, "Salsa", TRUE, FALSE, 56.34)
 ```
 ## F. Data Frames
 Los Data Frames son listas pegadas unas con otras que forman una tabla tipo excel. Son unas de las formas más comunes de guardar información y su comportamiento es similar a los Data Frames de Python.
-
+### Crear Data Frames
 Para crear un Data Frame se crean las listas que lo compondrán y luego se unen con el comando `data.frame()` en una nueva variable.
 ```
 # Crear vectos de numeros de 1 a 2000
@@ -68,7 +68,7 @@ id <- (1:200)
 # rep() permite repetir los valores cuantas veces se quiera
 perro_gato <- c(rep("Perro", 100), rep("Gato", 100))
 
-# Crear el datagrame con las columnas numeros y animales
+# Crear el Data Frame con las columnas numeros y animales
 # Es necesatio dar el nombre con que queremos que se titule cada columna en el Data Frame, en este caso sera Numero y Animales
 myData <- data.frame(Numero = id, Animales = perro_gato)
 ```
