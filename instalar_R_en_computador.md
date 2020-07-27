@@ -1,3 +1,4 @@
+:back: [Página anterior](introduccion_uso_R.md)
 # 1. Instalar R en un computador
 Para instalar R primero debemos descargar el paquete de la página oficial del proyecto R. Abajo se listan los enlaces directos a las páginas de descarga dependiendo del sistema operativo de nuestro computador:
 

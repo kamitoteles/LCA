@@ -1,3 +1,4 @@
+[Página anterior](introduccion_uso_R.md)
 # 2. Usar R en la nube
 La ventaja de usar servicios basados en la nube es que tendremos acceso a todas las funcionalidades de R sin tener que utilizar activamente nuestro computador. Esto viene bien en los casos que nuestro equipo sea un poco antiguo o tenga una capacidad de cómputo reducida.
 
