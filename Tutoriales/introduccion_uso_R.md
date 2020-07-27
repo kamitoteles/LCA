@@ -4,16 +4,19 @@
 
 Se puede trabajar con R intalándolo localmente o utilizando servicios por internet. A continuación se listan las instrucciones a seguir para cada caso:
     
-1. [Instalarlo en un computador y trabajar localmente](instalar_R_en_computador.md)
-2. [Usar un servicio en la nube y no instalar ningun programa en nuestro equipo](usar_R_en_nube.md)
+1. [Instalar R en un computador](instalar_R_en_computador.md)
+2. [Usar un servicio de R en la nube](usar_R_en_nube.md)
+
+![Layout](IMG/IMG_RStudio_Layout.png)
 
 ## A. Funcionalidades básicas de RStudio/RStudio-Cloud
-Algunas de las funcionalidades básicas de RStudio son:
-- Ejecutar una línea específica de código
-  
-  >  Seleccionar las líneas del código que se quiere correr y presionar `Crtl+R`
-- Ejeutar
-
+Algunas de las **funcionalidades básicas** de RStudio son:
+### *Ejecutar una línea específica de código* 
+Seleccionar las líneas del código que se quiere correr y teclear `Crtl+Enter`
+### *Ejecutar todo el código*
+Presionar el botón `Run` que se encuentra en la parte superior del
+### *Limpiar la consola*
+Cuando se quiera limpiar el output que se encuentra en la consola se teclea `Ctrl+l`
 
 ## B. Variables
 Para asignar variables en R se utiliza la sintaxis de flecha `<-` con la cual se da el valor (entero, palabra, lista, etc.).
