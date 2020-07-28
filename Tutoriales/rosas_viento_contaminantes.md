@@ -61,6 +61,7 @@ nombre_de_tabla[nombre_de_tabla == ""] <- NA
 nombre_de_tabla <- na.omit(nombre_de_tabla)
 ```
 Para ilustrar mejor este proceso, abajo tenemos una pequeña tabla con algunos datos nulos. Este sería un ejemplo de Data Frame que acabamos de leer con el comando **`read.excel()`**.
+
 |   Fecha    | Hora  | Vel Viento | Dir Viento |   CO2   |
 | :--------: | :---: | :--------: | :--------: | :-----: |
 | 01-07-2018 | 12:00 |     3      |    123     |  467.3  |
@@ -68,7 +69,9 @@ Para ilustrar mejor este proceso, abajo tenemos una pequeña tabla con algunos d
 | 01-07-2018 | 14:00 |    4.2     |    177     | 499.345 |
 | 01-07-2018 | 15:00 |    4.2     |            | 499.345 |
 | 01-07-2018 | 16:00 |    4.2     |    177     |  *NA*   |
+
 Como podemos ver, hay dos datos nulos (NA) y un dato vacío que R no pudo interpretar. Usando el código de arriba para omitir estos datos inexitentes la nueva tabla quedaría:
+
 |   Fecha    | Hora  | Vel Viento | Dir Viento |   CO2   |
 | :--------: | :---: | :--------: | :--------: | :-----: |
 | 01-07-2018 | 12:00 |     3      |    123     |  467.3  |
