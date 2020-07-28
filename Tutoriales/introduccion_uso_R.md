@@ -1,4 +1,4 @@
-[:back: Página anterior](../README.md)
+[Página anterior](../README.md)
 # Introducción al uso de R
 **R es un lenguaje de programación** enfocado en el análisis estadístico y ampliamente utilizado en la comunidad de investigadores a nivel mundial, siendo uno de los lenguajes más utilizados por la comunidad científica.
 
