@@ -76,6 +76,7 @@ Como podemos ver, hay dos datos nulos (NA) y un dato vacío que R no pudo interp
 | :--------: | :---: | :--------: | :--------: | :-----: |
 | 01-07-2018 | 12:00 |     3      |    123     |  467.3  |
 | 01-07-2018 | 14:00 |    4.2     |    177     | 499.345 |
+
 En esta nueva tabla se elimina toda la fila que contenía datos nulos, así solo faltara uno de los valores de una columna.
 
 ## 5. Hacer rosas de viento
