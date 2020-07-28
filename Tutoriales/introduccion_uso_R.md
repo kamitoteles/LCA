@@ -6,6 +6,7 @@ Se puede trabajar con R intalándolo localmente o utilizando servicios por inter
     
 1. [Instalar R en un computador](instalar_R_en_computador.md)
 2. [Usar un servicio de R en la nube](usar_R_en_nube.md)
+
 ---
 ## Layout de RStudio/RStudio-Cloud
 ![Layout](../IMG/IMG_R_Layout.png)
@@ -137,6 +138,7 @@ Para usar valores específicos dentro del data frame existen diversas formas:
     ```
 ### Añadir más columnas a un Data Frame ya creado
 Para agragar nuevas columnas al Data Frame utilizaremos la siguiente forma:
+
 ```
 # Primero debemos crear la columna nueva
 # El comando rnorm permite crear 200 valores aleatorios, con una distribución de media 40 y desviación de 20
