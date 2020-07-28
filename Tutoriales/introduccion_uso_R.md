@@ -35,7 +35,7 @@ variable_numerica <- 34
 variable_alfabetica <- "Perros y gatos"
 ```
 **IMPORTANTE:**
-- Los nombres de las variables no pueden componerse solo de números
+- Los nombres de las variables no pueden componerse mayor a 10 y menor o igual a 100 de números
 - Los nombres de variables no pueden contener caracteres especiales como -¿?·"!@#
 - Para guardar una palabra o frase, esta debe ir entre "comillas"
 
@@ -68,7 +68,81 @@ id <- (1:200)
 # rep() permite repetir los valores cuantas veces se quiera
 perro_gato <- c(rep("Perro", 100), rep("Gato", 100))
 
-# Crear el Data Frame con las columnas numeros y animales
+# Crear el Data Frame  de nombre `df_PerrosyGatos` con las columnas numeros y animales
 # Es necesatio dar el nombre con que queremos que se titule cada columna en el Data Frame, en este caso sera Numero y Animales
-myData <- data.frame(Numero = id, Animales = perro_gato)
+df_PerrosyGatos <- data.frame(Numero = id, Animales = perro_gato)
+```
+
+### Ver la información importante del Data Frame
+1. **Ver como table de Excel:**
+
+    Para ver nuestro Data Frame como una tabala de Excle escribimos el comando **`View(df_PerrosyGatos)`**
+
+2. **Ver impreso en la consola todo el Data Frame:**
+
+    Podemos escribir en la consola o el script el nombre de la variable del data frame. En el ejemplo anterior escribimos **`df_PerrosyGatos`**.
+
+3. **Ver un resumen del contenido de las colúmnas:**
+    
+    Para ver un resumen del nombre de cada colúmna, el tipo de datos que tiene dentro y un resumen de sus primeros valores podemos usar el comando **`str(df_PerrosyGatos)`**, en donde reemplazamos df_PerrosyGatos por la variable de nuestro Data Frame creado.
+
+    Output en consola:
+    >\> str(df_PerrosyGatos)\
+    'data.frame':	200 obs. of  2 variables:\
+    $ Numero  : int  1 2 3 4 5 6 7 8 9 10 ...\
+    $ Animales: chr  "Perro" "Perro" "Perro" "Perro" ...
+
+4. **Ver mayor a 10 y menor o igual a 100 los primeros datos:**
+
+    Podemos obvservar mayor a 10 y menor o igual a 100 los primeros datos de la tablautilizando el comnado **`head(df_PerrosyGatos, numero_filas_mostradas)`**. En donde como primer parámetro ponemos el nombre de nuestro Data Frame y como segundo el número de filas del principio que queremos ver.
+
+5. **Ver mayor a 10 y menor o igual a 100 los últimos datos:**
+
+    Podemos obvservar mayor a 10 y menor o igual a 100 los primeros datos de la tablautilizando el comnado **`tail(df_PerrosyGatos, numero_filas_mostradas)`**. En donde como primer parámetro ponemos el nombre de nuestro Data Frame y como segundo el número de filas del final que queremos ver.
+
+### Acceder a la información denro del Data Frame
+Para usar valores específicos dentro del data frame existen diversas formas:
+1. **Usar índices de fila y colúmna para acceder a los datos:**
+    
+    Podemos acceder a los datos de posiciones específicas dando las coordenadas de los datos según el orden **`[filas, columnas]`**
+    ```
+    # Acceder al dato en la fila 8 de la colúmna 2:
+    df_PerrosyGatos[8, 2]
+
+    # Guardar los datos de las filas 10 a la 32 de la columna 1 en otra variable:
+    variable_nueva <- df_PerrosyGatos[10:32, 1]
+    ```
+
+2. **Usar el nombre las colúmnas para acceder a los datos:**
+
+    Se puede usar el nombre de las colúmnas para acceer a los datos de la tabla. En estos casos es útil el comando previo **`str(df_PerrosyGatos)`** que nos imprime el nombre de todas las colúmnas.
+
+    En este caso puede usarse la forma anterior entre llaves **`[ ]`** o escribir  **`df_PerrosyGatos$nombre_columna`** 
+    ```
+    # Acceder a los datos de las filas 3 al 15 de la colúna "Numero"
+    df_PerrosyGatos[3:15, "Numero"]
+
+    # Guardar la colúmna "Animales" en otra variable
+    animales_nuevos <- df_PerrosyGatos$Animales
+    ```
+
+3. **Usar condiciones de búsqueda:**
+    Podemos utilizar condiciones en los casos que no queremos utilizar toda la información del Data Frame, sino algunos datos que siguen ciertas reglas.
+    ```
+    # Acceder a los perros cuyo numero sea mayor a 10 y menor o igual a 100
+    df_PerrosyGatos[df_PerrosyGatos$Animales == "Perro" & df_PerrosyGatos$Numero > 10 & df_PerrosyGatos$Numero <= 100]
+
+    # Acceder a lon animales que no sean perros o que su numero sea menor a 150
+    df_PerrosyGatos[df_PerrosyGatos$Animal != "Perro" | df_PerrosyGatos$Numero < 150]
+    ```
+### Añadir más columnas a un Data Frame ya creado
+Para agragar nuevas columnas al Data Frame utilizaremos la siguiente forma:
+```
+# Primero debemos crear la columna nueva
+# El comando rnorm permite crear 200 valores aleatorios, con una distribución de media 40 y desviación de 20
+# El comando round redondea los valores que tenga dentro de su paréntesis
+edades <- round(rnorm(200, mean = 40, sd = 20))
+
+# Luego se la añadimos al Data Frame como si asignaramos la variable edad a la columna que la contendrá, esto creará la columna del nombre "Edad"
+df_PerrosyGatos$Edad <- edades
 ```
