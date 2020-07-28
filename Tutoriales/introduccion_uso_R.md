@@ -136,6 +136,7 @@ Para usar valores específicos dentro del data frame existen diversas formas:
     # Acceder a lon animales que no sean perros o que su numero sea menor a 150
     df_PerrosyGatos[df_PerrosyGatos$Animal != "Perro" | df_PerrosyGatos$Numero < 150]
     ```
+
 ### Añadir más columnas a un Data Frame ya creado
 Para agragar nuevas columnas al Data Frame utilizaremos la siguiente forma:
 
@@ -148,3 +149,16 @@ edades <- round(rnorm(200, mean = 40, sd = 20))
 # Luego se la añadimos al Data Frame como si asignaramos la variable edad a la columna que la contendrá, esto creará la columna del nombre "Edad"
 df_PerrosyGatos$Edad <- edades
 ```
+
+## G. Gráficas
+Para graficar con R, el comando básico a utilizar en **`plot(x, y, "opcion")`**. Esto nos monstrará un gráfico de básico según la opción que le digamos de parámetro.
+
+Opciones:
+
+- "p" para untos
+- "l" para líneas
+- "b" para puntos y líneas
+- "h" para histograma
+- "s" para barras
+
+Sin embargo, R tiene una variedad inmensa para hacer gráficas de todo tipo. Es recomendable ver la página de la [Galería e Gráficas de R](https://www.r-graph-gallery.com) para conocer la variedad de posibilidades que ofrece este lenguaje.
