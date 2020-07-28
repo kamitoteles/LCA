@@ -1,4 +1,4 @@
-<img src="IMG/air-quality-icon.png" align="left" width="110">
+<img src="IMG/air-quality-icon.png" align="left" width="80">
 
 # Laboratorio de Calidad del Aire y Meteorología <br><font size="3">Universidad de los Andes  - Colombia </font> 
 
