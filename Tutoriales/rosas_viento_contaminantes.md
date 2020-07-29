@@ -1,6 +1,6 @@
 [Página anterior](../README.md)
 
-<img src="../IMG/WROSE.jpg" align="left" width="80">
+<img src="../IMG/WROSE.jpg" align="left" width="75">
 
 # Rosas de viento y de contaminantes con R
 Para crear rosas de viento y contaminantes usaremos la librería OpenAir de R. Documentación más detallada sobre todas las herramientas que tiene esta librería pueden encontrarse [aquí](https://bookdown.org/david_carslaw/openair/).
