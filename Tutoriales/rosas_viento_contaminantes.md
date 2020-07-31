@@ -38,7 +38,7 @@ library(readxl)
 **IMPORTANTE:** Es necesario activar las librerías cada vez que las vayamos a usar. Por esto, es bueno tenerlas de primeras dentro del script.
 
 ## 3. Leer la información de un archivo Excel
-Los datos de la Red de Monitoreo de Calidad del Aire de Bogotá (RMCA) se descargan en formato Excel. Por esto, debemos pasar esta información de los archivos a nuestro ambiente de trabajo en RStudio y así poder graficar las rosas de viento y contamiantes.
+Los datos de la [Red de Monitoreo de Calidad del Aire de Bogotá](http://rmcab.ambientebogota.gov.co/Report/stationreport) (RMCA) se descargan en formato Excel. Por esto, debemos pasar esta información de los archivos a nuestro ambiente de trabajo en RStudio y así poder graficar las rosas de viento y contamiantes.
 
 Para leer los datos de un archivo Excel se utiliza el comando:
 ```
@@ -49,6 +49,8 @@ Se recomienda usar la función **`file.choose()`** en el espacion de la direcci�
 Los parámetros **`sheet =`** y **`na =`** no son obligatorios para leer el archivo Excel, pero son recomendables para tener mayor control de la información que se guardará en la variable.
 
 Información más detallada de cómo usar el comando **`read.excel()`** y ejemplos de su uso pueden encontrarse en [esta página](https://www.rdocumentation.org/packages/readxl/versions/1.3.1/topics/read_excel).
+
+**IMPORTANTE:** Es necesario eliminar las filas inicilaes de identificación de la estación y de las unidades de cada variable; así como las últimas 10 filas de resumen estadístico de cada archivo de la RMCA.
 
 ## 4. Eliminar los datos nulos
 Las funciones para crear rosas emparejan los datos de velocidad o concentración en cada instante de tiempo con el dato de la dirección del viento en ese mismo instante. Por esto es necesario que cada dirección tenga su dato correspondiente para poder graficarse.

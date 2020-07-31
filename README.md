@@ -4,7 +4,9 @@
 
 
 
-Este repositorio tiene como fin albergar la información de códigos y tutoriales relevantes para el curso del Laboratorio de Calidad del Aire de la Universidad de los Andes.
+Bienvenidos al repositorio del Laboratorio de Calidad del Aire y Meteorología. Este tiene como fin albergar la información de tutoriales y herramientas relevantes para el desarrollo del curso, así como para servir de insumo de revisión y repaso.
+
+Este es un repositorio abierto, por lo que todos los cambios y sugerencias serán bien recibidos por el sistema de Pull Request del repositorio o por correo a la dirección ca.moreno12@uniandes.edu.co .
 
 ---
 
