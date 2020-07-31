@@ -11,7 +11,7 @@ Una vez descargado, abrimos el paquete y seguimos los procesos de instalación. 
 Por esto se recomienda utilizar un **Entorno Gráfico de Desarrollo (IDE)**, debido a que una interfaz gráfica (con ventanas y menús organizados) resulta más intuitiva y fácil de utilizar. En este caso **utilizaremos RStudio**, que es el IDE más conocido para R.
 
 ## 1.1. Instalar RStudio
-El procedimeinto de intalación de RStudio es similar al de R. Abajo se listan los links de descarga para cada sistema operativo:
+El procedimiento de instalación de RStudio es similar al de R. Abajo se listan los links de descarga para cada sistema operativo:
 
 - [RStudio para Windows](https://download1.rstudio.org/desktop/windows/RStudio-1.3.1056.exe)
 - [RStuio para Mac OS](https://download1.rstudio.org/desktop/macos/RStudio-1.3.1056.dmg)

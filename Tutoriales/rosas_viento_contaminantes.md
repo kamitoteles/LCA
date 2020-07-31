@@ -8,9 +8,9 @@ Para crear rosas de viento y contaminantes usaremos la librería OpenAir de R. D
 Los pasos para generar una rosa de viento y de contaminantes son:
 
 ## 1. Instalar las librerías a utilizar
-Las librerías son conjuntos de funciones especiales creadas por la comunidad que trabaja en R en todo el mundo. Son las herramientas más poderosas que tiene este lenguaje de programacion, ya uqe permite ahorrar el tiempo de crear desde cero todas lasfuncionalidades.
+Las librerías son conjuntos de funciones especiales creadas por la comunidad que trabaja en R en todo el mundo. Son las herramientas más poderosas que tiene este lenguaje de programación, ya que permite ahorrar el tiempo de crear desde cero todas las funcionalidades.
 
-Para hecer rosas de viento necesitaremos dos librerías. La primera es OpenAir que nos permitirá hacer las rosas como tal. La segunda es ReadXl, con la que podremos leer los archivos de Excel que tendrán la información de las velocidades y direcciones del viento, así como las concentraciones de los contaminantes que queremos graficar.
+Para hacer rosas de viento necesitaremos dos librerías. La primera es OpenAir que nos permitirá hacer las rosas como tal. La segunda es ReadXl, con la que podremos leer los archivos de Excel que tendrán la información de las velocidades y direcciones del viento, así como las concentraciones de los contaminantes que queremos graficar.
 
 La instalación de estas librerías en RStudio se hace de la siguiente forma. El comando es el mismo, solo cambia el nombre del paquete.
 ```
@@ -20,7 +20,7 @@ install.packages("openair")
 # Para instalar ReadXL
 install.packages("readxl")
 ```
-Es recomendable ejecutar estas líneas en la consola de RStudio, ya que si las ponemos en el script que estamos usando para graficar las rosas, cada vez que corramos nuestro códico se volverán a instalar las librería, y esto hará más lento el proceso.
+Es recomendable ejecutar estas líneas en la consola de RStudio, ya que si las ponemos en el script que estamos usando para graficar las rosas, cada vez que corramos nuestro código se volverán a instalar las librería, y esto hará más lento el proceso.
 
 Instalar los paquetes solo tiene que hacerse una vez. Cuando ya los tengamos en instalados en nuestro entorno (computador local o en la nube), ya no necesitaremos volver a escribir estas líneas de código.
 
@@ -38,19 +38,19 @@ library(readxl)
 **IMPORTANTE:** Es necesario activar las librerías cada vez que las vayamos a usar. Por esto, es bueno tenerlas de primeras dentro del script.
 
 ## 3. Leer la información de un archivo Excel
-Los datos de la [Red de Monitoreo de Calidad del Aire de Bogotá](http://rmcab.ambientebogota.gov.co/Report/stationreport) (RMCA) se descargan en formato Excel. Por esto, debemos pasar esta información de los archivos a nuestro ambiente de trabajo en RStudio y así poder graficar las rosas de viento y contamiantes.
+Los datos de la [Red de Monitoreo de Calidad del Aire de Bogotá](http://rmcab.ambientebogota.gov.co/Report/stationreport) (RMCA) se descargan en formato Excel. Por esto, debemos pasar esta información de los archivos a nuestro ambiente de trabajo en RStudio y así poder graficar las rosas de viento y contaminantes.
 
 Para leer los datos de un archivo Excel se utiliza el comando:
 ```
 nombre_de_tabla <- read_excel("dirección_de_archivo_excel", sheet = "hoja_a_leer",na = "datos_tomados_como_nulos")
 ```
-Se recomienda usar la función **`file.choose()`** en el espacion de la dirección del archivo, para que aparezca una ventana de los archivos del computador y se pueda seleccionar manualmente el archivo a leer.
+Se recomienda usar la función **`file.choose()`** en el espacio de la dirección del archivo, para que aparezca una ventana de los archivos del computador y se pueda seleccionar manualmente el archivo a leer.
 
 Los parámetros **`sheet =`** y **`na =`** no son obligatorios para leer el archivo Excel, pero son recomendables para tener mayor control de la información que se guardará en la variable.
 
 Información más detallada de cómo usar el comando **`read.excel()`** y ejemplos de su uso pueden encontrarse en [esta página](https://www.rdocumentation.org/packages/readxl/versions/1.3.1/topics/read_excel).
 
-**IMPORTANTE:** Es necesario eliminar las filas inicilaes de identificación de la estación y de las unidades de cada variable; así como las últimas 10 filas de resumen estadístico de cada archivo de la RMCA.
+**IMPORTANTE:** Es necesario eliminar las filas iniciales de identificación de la estación y de las unidades de cada variable; así como las últimas 10 filas de resumen estadístico de cada archivo de la RMCA.
 
 ## 4. Eliminar los datos nulos
 Las funciones para crear rosas emparejan los datos de velocidad o concentración en cada instante de tiempo con el dato de la dirección del viento en ese mismo instante. Por esto es necesario que cada dirección tenga su dato correspondiente para poder graficarse.
@@ -75,7 +75,7 @@ Para ilustrar mejor este proceso, abajo tenemos una pequeña tabla con algunos d
 | 01-07-2018 | 15:00 |    4.2     |            | 499.345 |
 | 01-07-2018 | 16:00 |    4.2     |    177     |  *NA*   |
 
-Como podemos ver, hay dos datos nulos (NA) y un dato vacío que R no pudo interpretar. Usando el código de arriba para omitir estos datos inexitentes la nueva tabla quedaría:
+Como podemos ver, hay dos datos nulos (NA) y un dato vacío que R no pudo interpretar. Usando el código de arriba para omitir estos datos inexistentes la nueva tabla quedaría:
 
 |   Fecha    | Hora  | Vel Viento | Dir Viento |   CO2   |
 | :--------: | :---: | :--------: | :--------: | :-----: |
@@ -85,7 +85,7 @@ Como podemos ver, hay dos datos nulos (NA) y un dato vacío que R no pudo interp
 En esta nueva tabla se elimina toda la fila que contenía datos nulos, así solo faltara uno de los valores de una columna.
 
 ## 5. Hacer rosas de viento
-Para hacer las rosas de viento necesitamos saber de antemano el nombre de las colúmnas de nuestra tabla que tiene almacenada la información de la velocidad del viento y la dirección del viento. Para verificar el nombre de dichas columnas resulta de utilidad el comando **`srt()`** que se explica en la [Introducción al uso de R](introduccion_uso_R.md).
+Para hacer las rosas de viento necesitamos saber de antemano el nombre de las columnas de nuestra tabla que tiene almacenada la información de la velocidad del viento y la dirección del viento. Para verificar el nombre de dichas columnas resulta de utilidad el comando **`srt()`** que se explica en la [Introducción al uso de R](introduccion_uso_R.md).
 
 Una vez tenemos claros los nombres implementamos el siguiente código:
 ```
