@@ -32,7 +32,14 @@ R maneja múltiples tipos de datos, pero los que cubriremos en este curso son:
 - **NA:** Not Aviable, significa que el dato no está disponible o no existe
 - **NaN:** Not a Number, significa que el dato no es un número. Es diferente a NA
 
-## C. Variables
+## C. Comentarios
+Los comentarios son pedazos de un código que es ignorado al momento de ejecutar el código. Para hacer comentarios con R se utiliza el símbolo `#`.
+```
+# Esto es un comentario
+Esto no es un comentario y al no significar nada para R, dará un error si se ejecuta
+```
+
+## D. Variables
 Para asignar variables en R se utiliza la sintaxis de flecha `<-` con la cual se da el valor (entero, palabra, lista, etc.).
 ```
 variable_numerica <- 34
@@ -43,13 +50,22 @@ variable_alfabetica <- "Perros y gatos"
 - Los nombres de variables no pueden contener caracteres especiales como -¿?·"!@#
 - Para guardar una palabra o frase, esta debe ir entre "comillas"
 
-## D. Comentarios
-Los comentarios son pedazos de un código que es ignorado al momento de ejecutar el código. Para hacer comentarios con R se utiliza el símbolo `#`.
+## E. Vectores
+Los vectores son líneas de datos de **un solo tipo**. Una vez se guarda un tipo de dato en ellos, el resto de la información tiene que ser del mismo tipo.
+
+Un ejemplo para crear un vector:
 ```
-# Esto es un comentario
-Esto no es un comentario y al no significar nada para R, dará un error si se ejecuta
+# Crear un vector de números enteros del 1 al 10
+vector_enteros <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# Otra forma de crear el mismo vector del 1 al 10
+vector_enteros <- c(1:10)
+
+# Crear un vector con los valores de verdad de las promesas de amor que me hizo
+vector_verdades <- c(F, F, F, FALSE, F, FALSE, FALSE)
 ```
-## E. Listas
+
+## F. Listas
 Las listas son conjuntos de varios valores unidos. Son flexibles al poder guardar cualquier tipo de dato (entero, palabra, decimal, booleano, etc.).
 
 Un ejemplo de crear listas:
@@ -60,13 +76,14 @@ lista_planetas <- list("Mercurio", "Venus", "Tierra", "Marte")
 # Lista combinada
 lista_detodito <- list(234, "Salsa", TRUE, FALSE, 56.34)
 ```
-## F. Data Frames
+## G. Data Frames
 Los Data Frames son listas pegadas unas con otras que forman una tabla tipo excel. Son unas de las formas más comunes de guardar información y su comportamiento es similar a los Data Frames de Python.
+
 ### Crear Data Frames
 Para crear un Data Frame se crean las listas que lo compondrán y luego se unen con el comando `data.frame()` en una nueva variable.
 ```
 # Crear vector de números de 1 a 2000
-id <- (1:200)
+id <- c(1:200)
 
 # Crear vector de las palabras "perro" y "gato" 100 veces cada una
 # rep() permite repetir los valores cuantas veces se quiera
@@ -153,7 +170,7 @@ edades <- round(rnorm(200, mean = 40, sd = 20))
 df_PerrosyGatos$Edad <- edades
 ```
 
-## G. Gráficas
+## H. Gráficas
 Para graficar con R, el comando básico a utilizar en **`plot(x, y, "opcion")`**. Esto nos mostrará un gráfico de básico según la opción que le digamos de parámetro.
 
 Opciones:
