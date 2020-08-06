@@ -1,5 +1,5 @@
 # ¿Cómo descargar un radiosondeo de la NOAA?
-La NOAA ofrece una base de datos de una gran cantidad de radiosondeos de estaciones en todo el mundo. En este caso la utilizaremos para descargar la infomación de los radiosondeos de todo el año 2016 de la estación del aeropuerto el Dorado de Bogotá.
+La NOAA ofrece una base de datos de una gran cantidad de radiosondeos de estaciones en todo el mundo. En este caso la utilizaremos para descargar la información de los radiosondeos de todo el año 2016 de la estación del aeropuerto el Dorado de Bogotá.
 
 # 1. Ingresar a la página de descarga
 El enlace para ingresar a la página de descarga de los radiosondeos es https://ruc.noaa.gov/raobs/.
@@ -29,9 +29,11 @@ Finalmente, continuamos a la siguiente sección con el botón `Continue Data Req
 
 
 # 3. Selecionar país
-A continuación se nos presenta una lista en la sección `Access by Country` en donde seleccionaremos el país de interés, en este caso, Colombia.
+A continuación se nos presenta una lista en la sección `Access by Country` en donde seleccionamos el país de interés, en este caso, Colombia.
 
-En la opción de `View / select stations from the countries you have selected?` dirémos que sí. Esto nos permitirá escoger entre las diferentes estaciones de radiosondeos que hay en Colombia.
+En la opción de `View / select stations from the countries you have selected?` ponemos sí. Esto nos permitirá escoger entre las diferentes estaciones de radiosondeos que hay en Colombia.
+
+**IMPORTANTE:** En esta página encontramos el link `Both FSL output formats`. Si lo seleccionamos se abrirá una página explicativa de la forma en la que está organizada la información de los radiosondeos en el formato FSL. el link también se puede consulta [aquí](https://ruc.noaa.gov/raobs/fsl_format-new.html).
 
 <p class="aligncenter">
     <img src="../IMG/NOAA country.png"  width="500">
@@ -41,3 +43,26 @@ En la opción de `View / select stations from the countries you have selected?` 
     text-align: center;
 }
 </style>
+
+# 4. Seleccionar estación
+En esta nueva página seleccionamos la estación 80222 de el aeropuerto el Dorado de Bogotá.
+
+Por último, damos click en el botón `Get Radiosonde Data`. dependiendo de la antigüedad de la información, la longitud del periodo seleccionado y la velocidad del internet, esto puede tomar un tiempo prolongado.
+
+<p class="aligncenter">
+    <img src="../IMG/NOAA station.png"  width="500">
+</p>
+<style>
+.aligncenter {
+    text-align: center;
+}
+</style>
+
+# 5. Guardar la información
+Ahora se muestra toda la información en de los radiosondeos del 2016 en un formato de columnas de números. Para comprender qué significa cada columna ponemos ir a la página explicativa de la NOAA, que se encuentra [aquí](https://ruc.noaa.gov/raobs/fsl_format-new.html).
+
+Para guardar los datos seleccionamos la información de toda la tabla. Esto se puede hacer con la combinación de teclas `Ctrl + A` en Windows y Linux, o `Cmd + A` en MacOS.
+
+Una vez seleccionados los datos usamos la función copia `Ctrl + C` o `Cmd + C` y pegamos estos datos en un archivo de texto plano. Se recomienda usar Notepad o TextEdit para este proceso, ya que programas como Word o Pages no pueden guardar el texto plano.
+
+**IMPORTANTE:** Al momento de guardar el archivo es fundamental ponerle al final la extensión **`.UA`** para que pueda ser leído correctamente por Aermod.
