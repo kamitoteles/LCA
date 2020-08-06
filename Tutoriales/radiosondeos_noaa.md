@@ -17,4 +17,15 @@ A continuación en la sección de `Select Radiosonde Sites by` escogemos la opci
 
 Finalmente, continuamos a la siguiente sección con el botón `Continue Data Request`.
 
-<img src="../IMG/NOAA input.png" align="center" width="500">
+<p class="aligncenter">
+    <img src="../IMG/NOAA_input.png"  width="500">
+</p>
+<style>
+.aligncenter {
+    text-align: center;
+}
+</style>
+
+
+# 3. Selecionar país
+La 
