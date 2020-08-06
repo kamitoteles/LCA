@@ -175,7 +175,7 @@ Para graficar con R, el comando básico a utilizar en **`plot(x, y, "opcion")`**
 
 Opciones:
 
-- "p" para untos
+- "p" para puntos
 - "l" para líneas
 - "b" para puntos y líneas
 - "h" para histograma
