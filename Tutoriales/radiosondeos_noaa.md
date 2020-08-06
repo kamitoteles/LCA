@@ -17,4 +17,4 @@ A continuación en la sección de `Select Radiosonde Sites by` escogemos la opci
 
 Finalmente, continuamos a la siguiente sección con el botón `Continue Data Request`.
 
-<img src="../IMG/NOAA input.png" align="center" width="600">
+<img src="../IMG/NOAA input.png" align="center" width="500">
