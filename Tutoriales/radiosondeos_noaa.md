@@ -18,7 +18,7 @@ A continuación en la sección de `Select Radiosonde Sites by` escogemos la opci
 
 Finalmente, continuamos a la siguiente sección con el botón `Continue Data Request`.
 
-<p class="aligncenter" align="center">
+<p align="center">
     <img src="../IMG/NOAA_input.png"  width="500">
 </p>
 
@@ -30,30 +30,18 @@ En la opción de `View / select stations from the countries you have selected?` 
 
 **IMPORTANTE:** En esta página encontramos el link `Both FSL output formats`. Si lo seleccionamos se abrirá una página explicativa de la forma en la que está organizada la información de los radiosondeos en el formato FSL. el link también se puede consulta [aquí](https://ruc.noaa.gov/raobs/fsl_format-new.html).
 
-<p class="aligncenter">
+<p align="center">
     <img src="../IMG/NOAA country.png"  width="500">
 </p>
-
-<style>
-.aligncenter {
-    text-align: center;
-}
-</style>
 
 # 4. Seleccionar estación
 En esta nueva página seleccionamos la estación 80222 de el aeropuerto el Dorado de Bogotá.
 
 Por último, damos click en el botón `Get Radiosonde Data`. dependiendo de la antigüedad de la información, la longitud del periodo seleccionado y la velocidad del internet, esto puede tomar un tiempo prolongado.
 
-<p class="aligncenter">
+<p align="center">
     <img src="../IMG/NOAA station.png"  width="500">
 </p>
-
-<style>
-.aligncenter {
-    text-align: center;
-}
-</style>
 
 # 5. Guardar la información
 Ahora se muestra toda la información en de los radiosondeos del 2016 en un formato de columnas de números. Para comprender qué significa cada columna ponemos ir a la página explicativa de la NOAA, que se encuentra [aquí](https://ruc.noaa.gov/raobs/fsl_format-new.html).
