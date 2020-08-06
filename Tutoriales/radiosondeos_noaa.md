@@ -21,6 +21,7 @@ Finalmente, continuamos a la siguiente sección con el botón `Continue Data Req
 <p class="aligncenter">
     <img src="../IMG/NOAA_input.png"  width="500">
 </p>
+
 <style>
 .aligncenter {
     text-align: center;
@@ -38,6 +39,7 @@ En la opción de `View / select stations from the countries you have selected?` 
 <p class="aligncenter">
     <img src="../IMG/NOAA country.png"  width="500">
 </p>
+
 <style>
 .aligncenter {
     text-align: center;
@@ -52,6 +54,7 @@ Por último, damos click en el botón `Get Radiosonde Data`. dependiendo de la a
 <p class="aligncenter">
     <img src="../IMG/NOAA station.png"  width="500">
 </p>
+
 <style>
 .aligncenter {
     text-align: center;
