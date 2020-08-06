@@ -6,6 +6,7 @@ El enlace para ingresar a la página de descarga de los radiosondeos es https://
 
 Al entrar se nos presentará la siguiente página de inicio:
 
+
 <img src="../IMG/NOAA pag inicio.png" align="center" width="1000">
 
 # 2. Especificar los datos que queremos descargar
@@ -28,4 +29,15 @@ Finalmente, continuamos a la siguiente sección con el botón `Continue Data Req
 
 
 # 3. Selecionar país
-La 
+A continuación se nos presenta una lista en la sección `Access by Country` en donde seleccionaremos el país de interés, en este caso, Colombia.
+
+En la opción de `View / select stations from the countries you have selected?` dirémos que sí. Esto nos permitirá escoger entre las diferentes estaciones de radiosondeos que hay en Colombia.
+
+<p class="aligncenter">
+    <img src="../IMG/NOAA country.png"  width="500">
+</p>
+<style>
+.aligncenter {
+    text-align: center;
+}
+</style>
