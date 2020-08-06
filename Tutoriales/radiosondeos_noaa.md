@@ -28,7 +28,9 @@ Finalmente, continuamos a la siguiente sección con el botón `Continue Data Req
 }
 </style>
 
-<div style="text-align:center"><img src="../IMG/NOAA_input.png"  width="500"></div>
+<div style="text-align:center">
+<img src="../IMG/NOAA_input.png"  width="500">
+</div>
 
 # 3. Selecionar país
 A continuación se nos presenta una lista en la sección `Access by Country` en donde seleccionamos el país de interés, en este caso, Colombia.
