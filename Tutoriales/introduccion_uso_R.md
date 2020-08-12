@@ -113,13 +113,13 @@ df_PerrosyGatos <- data.frame(Numero = id, Animales = perro_gato)
     $ Numero  : int  1 2 3 4 5 6 7 8 9 10 ...\
     $ Animales: chr  "Perro" "Perro" "Perro" "Perro" ...
 
-4. **Ver mayor a 10 y menor o igual a 100 los primeros datos:**
+4. **Ver los primeros datos:**
 
-    Podemos observar mayor a 10 y menor o igual a 100 los primeros datos de la tabla utilizando el comanado **`head(df_PerrosyGatos, numero_filas_mostradas)`**. En donde cómo primer parámetro ponemos el nombre de nuestro Data Frame y como segundo el número de filas del principio que queremos ver.
+    Podemos observar los primeros datos de la tabla utilizando el comanado **`head(df_PerrosyGatos, numero_filas_mostradas)`**. En donde cómo primer parámetro ponemos el nombre de nuestro Data Frame y como segundo el número de filas del principio que queremos ver.
 
-5. **Ver mayor a 10 y menor o igual a 100 los últimos datos:**
+5. **Ver los últimos datos:**
 
-    Podemos observar mayor a 10 y menor o igual a 100 los primeros datos de la tabla utilizando el comando **`tail(df_PerrosyGatos, numero_filas_mostradas)`**. En donde como primer parámetro ponemos el nombre de nuestro Data Frame y como segundo el número de filas del final que queremos ver.
+    Podemos observar los primeros datos de la tabla utilizando el comando **`tail(df_PerrosyGatos, numero_filas_mostradas)`**. En donde como primer parámetro ponemos el nombre de nuestro Data Frame y como segundo el número de filas del final que queremos ver.
 
 ### Acceder a la información dentro del Data Frame
 Para usar valores específicos dentro del data frame existen diversas formas:
