@@ -20,7 +20,7 @@ Algunas de las **funcionalidades básicas** de RStudio son:
 ### *Ejecutar una línea específica de código* 
 Seleccionar las líneas del código que se quiere correr y teclear `Crtl+Enter`
 ### *Ejecutar todo el código*
-Presionar el botón `Run` que se encuentra en la parte superior del
+Teclear `Crtl+Shift+Enter`
 ### *Limpiar la consola*
 Cuando se quiera limpiar el output que se encuentra en la consola se teclea `Ctrl+L`
 ## B. Tipos de datos de R
