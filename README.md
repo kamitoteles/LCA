@@ -13,11 +13,17 @@ Este es un repositorio abierto, por lo que todos los cambios y sugerencias será
 ## Tutoriales:
 Los siguientes tutoriales están disponibles para consulta. Cubren temas básicos necesarios para el desarrollo de las actividades del curso, y por esto se incentiva a los estudiantes a buscar otras fuentes de información complementaria si desean profundizar más en el uso de cada herramienta.
 
+### R y RStudio
 - [Introducción al uso de R](Tutoriales/introduccion_uso_R.md)
-- [¿Cómo correr un script de Python?](https://youtu.be/Yw-tznI5sQs)
-- [Descarga de radiosondeos de la NOAA](Tutoriales/radiosondeos_noaa.md)
 - [Rosas de viento y contaminantes con R](Tutoriales/rosas_viento_contaminantes.md)
 - [Análisis de series de tiempo con R](Tutoriales/series_tiempo.md)
+
+### Python
+- [¿Cómo correr un script de Python?](https://youtu.be/Yw-tznI5sQs)
+- [¿Cómo usar el programa RMCAB_to_SAMSON.py?](https://www.youtube.com/watch?v=J108TSa1oh4)
+
+### Descarga de radiosondeos
+- [Descarga de radiosondeos de la NOAA](Tutoriales/radiosondeos_noaa.md)
 
 ---
 # Herramientas
