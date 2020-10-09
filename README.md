@@ -25,6 +25,14 @@ Los siguientes tutoriales están disponibles para consulta. Cubren temas básico
 ### Descarga de radiosondeos
 - [Descarga de radiosondeos de la NOAA](Tutoriales/radiosondeos_noaa.md)
 
+### Manejo y calibración de equipos - Exposición personal
+- [Uso de Delta OHM HD37AB1347 - Video](https://www.youtube.com/watch?v=H3I-pWLRfJM)
+- [Uso de Langan T15n - Video](https://www.youtube.com/watch?v=5NE2SSs4Ffw)
+- [Montaje del PEM - Video](https://www.youtube.com/watch?v=MzqiZCyaat4)
+- [Calibración del PEM - Video](https://youtu.be/ZC-9uzVnQ70)
+- [Pesaje de filtros - Video](https://youtu.be/a9NEt6xeWP4)
+- [Registro de pesos de filtros - Video](https://youtu.be/DIan86SybKo)
+
 ---
 # Herramientas
 Estas son herramientas útiles para realizar algunos procesos de análisis de datos.
