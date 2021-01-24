@@ -19,8 +19,8 @@ Los siguientes tutoriales están disponibles para consulta. Cubren temas básico
 - [Análisis de series de tiempo con R](Tutoriales/series_tiempo.md)
 
 ### Python
-- [¿Cómo correr un script de Python?](https://youtu.be/Yw-tznI5sQs)
-- [¿Cómo usar el programa RMCAB_to_SAMSON.py?](https://www.youtube.com/watch?v=J108TSa1oh4)
+- [¿Cómo correr un script de Python? - Video](https://youtu.be/Yw-tznI5sQs)
+- [¿Cómo usar el programa RMCAB_to_SAMSON.py? - Video](https://www.youtube.com/watch?v=J108TSa1oh4)
 
 ### Descarga de radiosondeos
 - [Descarga de radiosondeos de la NOAA](Tutoriales/radiosondeos_noaa.md)
