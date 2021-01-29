@@ -2,7 +2,7 @@
 # 1. Instalar R en un computador
 Para instalar R primero debemos descargar el paquete de la página oficial del proyecto R. Abajo se listan los enlaces directos a las páginas de descarga dependiendo del sistema operativo de nuestro computador:
 
-- [R para Windows](https://www.icesi.edu.co/CRAN/)
+- [R para Windows](https://www.icesi.edu.co/CRAN/bin/windows/base/R-4.0.3-win.exe)
 - [R para Mac OS](https://www.icesi.edu.co/CRAN/bin/macosx/R-4.0.2.pkg)
 - [R para Linux](https://www.icesi.edu.co/CRAN/bin/linux/)
 
